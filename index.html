@@ -1,213 +1,248 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FasihNasir|All</title>
-    <style>
-        body{
-       
-            background-color: #061520fa;
-            box-sizing: border-box;
-            font-weight: bolder;
-            color: white;
-       
-            text-transform: capitalize;
-          
-        }
-      h1{text-align: center;font-size: 34px;font-weight: 100;}
-      .main{
-        /* border: 1px solid red; */
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>FASIHNASIR</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mooli&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<style>
+    #home{
         display: flex;
+        align-items: center;
         flex-direction: row;
-        justify-content: center;
-    
-    }
-    div{
-       
-        margin: 15px;
-       
-        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-      
-        width: 300px;
-        height: 100px;
-        padding: 20px;
-        border-radius: 30px;
-    animation: 2s an linear infinite;
-    }
-    @keyframes an {
-        0%{border: 2px solid aqua; }
-        25%{border: 2px solid #041b2d;}
-        50%{border: 2px solid aqua; }
-        75%{border: 2px solid #041b2d;}
-       100%{border: 2px solid aqua; }
+background-image: url(home.png);
+height: 100vh;
+background-size: cover;
+object-fit: cover;
+background-position: center;
+}
+.container{
+    /* background-color: rgba(211, 211, 211, 0.106); */
+    padding: 50px 60px;
+    color: white;
+    overflow-Y: scroll;
+    height: 90vh;
+    /* border: 2px solid #121427; */
+    font-family: "Nunito", sans-serif;
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+}
+.container::-webkit-scrollbar{
+    display: none;
+}
+.row{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-family: "Nunito", sans-serif;
+    transition: 0.9s ease;
+}
+.row>div:hover{
+    border: 1px solid rgba(211, 211, 211, 0.3);
+    background-color: #1214272a;
+}
+.row>div:hover button{
+    background-color: rgba(211, 211, 211, 0.383) ;
+}
+.row>div{
+    padding: 30px 0px;
+    background-color: rgba(211, 211, 211, 0.3);
+    height: 200px;
+    /* width: 200px; */
+    margin: 5px;
+    text-align: center;
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    font-family: "Nunito", sans-serif;
+    justify-content: center;
+}
 
-    }
-
-      p{font-size: 20px;margin-top: -40px;}
-      button{
-        background-color: #061520;
-        border: 1px solid aqua;
-        color: #041b2d;
-        font-weight: 900;
-        color: white;
-        padding: 10px;
-        width: 100px;
-
-        border-radius: 150px;
-        /* transform:rotateX(360deg); */
-    }
-    button:hover{
-          /* background-color: aqua; */
-        border: 1px solid aqua;
-        color: aqua;
-        transition: 0.300s transform ease-out;
-        /* transform:rotate(360deg); */
-        transform: scale(1.5)rotate(360deg);
-    
-      }
-      
-      h6{margin-top: 0px;}
-    </style>
+.row>div>a>button{
+    color: white;
+    background-color: #1214277a;
+    padding: 5px 40px;
+    font-family: "Nunito", sans-serif;
+    border: none;
+    transition: 0.5s ease;
+}
+.row>div>a>button:hover{
+    background-color: rgba(211, 211, 211, 0.515) ;
+    transform: scale(1.1);
+    background-color: transparent;
+    color: rgba(211, 211, 211, 0.3);
+    border: 1px solid rgba(211, 211, 211, 0.3);;;;
+}
+.top{
+    background-color:  rgba(211, 211, 211, 0.515) ;
+    position: fixed;
+    right: 150px;
+    top: 35px;
+    color: white;
+}
+.up{
+    background-color:  rgba(211, 211, 211, 0.515) ;
+    position: fixed;
+    right: 150px;
+    bottom: 30px;
+    color: white;
+}
+.up:hover{
+    color:white;
+    border: 1px solid white;
+}
+.top:hover{
+    color:white;
+    border: 1px solid white;
+}
+</style> 
 </head>
-<body>
-   <h1> Fasih  Nasir</span</h1> 
- <main class="main">
-    <div>
-        <h6>Project 01</h6>
-        <p>Basic Stucture</p>
-        <a href="https://fasih-nasirproject1.netlify.app/" target="_blank"><button>See-more</button></a>
-    </div>
-    <div>  <h6>Project 02</h6>
-        <p>List</p>
-        <a href="https://fasih-nasirproject2.netlify.app/" target="_blank"><button>See-more</button></a>
-    </div>
-    <div>  
-        <h6>Project 03</h6>
-        <p>Menu</p>
-        <a href="https://fasih-nasirproject3.netlify.app/" target="_blank"><button>See-more</button></a>
-    </div>
+  <body>
+    <div class="container-fluid" id="home">
+<div class="container">
+    <a href="#top">
+    <button class="btn top" ><i class="fa-solid fa-caret-up"></i></button>
+</a>
+<a href="#up">
+    <button class="btn up"><i class="fa-solid fa-caret-down"></i></button>
+</a>
+    <main class="row" id="top">
+        <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-6 col-sm-12" >
+   
+                     <h1>html</h1>
+            <h6>Project 01</h6>
+            <p>Basic Stucture</p>
+            <a href="https://fasih-nasirproject1.netlify.app/" target="_blank"><button>See-more</button></a>
+        </div>
+        <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-6 col-sm-12"> 
+                     <h1>html</h1> <h6>Project 02</h6>
+            <p>List</p>
+            <a href="https://fasih-nasirproject2.netlify.app/" target="_blank"><button>See-more</button></a>
+        </div>
+        <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-6 col-sm-12">
+                     <h1>html</h1>  
+            <h6>Project 03</h6>
+            <p>Menu</p>
+            <a href="https://fasih-nasirproject3.netlify.app/" target="_blank"><button>See-more</button></a>
+        </div>
+        
+        
+    </main>
+    <!--  -->
+    <main class="row">
+        <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-6 col-sm-12"> 
+                     <h1>html</h1> <h6>Project 04</h6>
+            <p>Nested Table</p>
+            <a href="https://fasih-nasirproject4.netlify.app/" target="_blank"><button>See-more</button></a>
+        </div>
+        <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-6 col-sm-12">
+                     <h1>html</h1>  <h6>Project 05</h6>
+            <p>Table Form</p>
+            <a href="https://fasih-nasirproject5.netlify.app/" target="_blank"><button>See-more</button></a>
+        </div>
+        <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-6 col-sm-12">
+                     <h1>html</h1>
+          <h6>Project 06</h6>
+            <p>Peroditic Table</p>
+            <a href="https://fasih-nasirproject6.netlify.app/" target="_blank"><button>See-more</button></a>
+        </div>
+        
+        
+    </main>
+    <!--  -->
+    <main class="row">
+        <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-6 col-sm-12">
+            <h2>Css</h2>
+            <h6>Project 07</h6>
+            <p>Food Website</p>
+            <a href="https://fasih-nasirproject7.netlify.app/" target="_blank"><button>See-more</button></a>
+        </div>
+        <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-6 col-sm-12">
+                  <h2>Css</h2>
+            <h6>Project 08</h6>
+            <p>W3 School </p>
+            <a href="https://fasih-nasirproject8.netlify.app/" target="_blank"><button>See-more</button></a>
+        </div>
+        <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-6 col-sm-12">
+                  <h2>Css</h2>
+              <h6>Project 09</h6>
+            <p>Form</p>
+            <a href="https://fasih-nasirproject9.netlify.app/" target="_blank"><button>See-more</button></a>
+        </div>
+        
+        
+    </main>
+    <main class="row">
+        
+      
+        <div  class="col-xxl-3 col-xl-3 col-lg-3 col-md-6 col-sm-12">
+                  <h2>Css</h2>
+              <h6>Project 10</h6>
+            <p>Flims Table</p>
+            <a href="https://fasih-nasirproject10.netlify.app/" target="_blank"><button>See-more</button></a>
+        </div>
+        <div  class="col-xxl-3 col-xl-3 col-lg-3 col-md-6 col-sm-12">
+                  <h2>Css</h2>
+            <h6>Project 11</h6>
+            <p>Figma Wesbite</p>
+            <a href="https://fasih-nasirproject11.netlify.app/" target="_blank"><button>See-more</button></a>
+        </div>
+            <div  class="col-xxl-3 col-xl-3 col-lg-3 col-md-6 col-sm-12">
+                      <h2>Css</h2>
+            <h6>Project 12</h6>
+            <p>Whatsapp</p>
+            <a href="https://fasih-nasirproject12.netlify.app/" target="_blank"><button>See-more</button></a>
+        </div>
+            <!-- <div>
+            <h6>Project 13</h6>
+            <p>FaceBook</p>
+            <a href="https://fasih-nasir.github.io/project13/" target="_blank"><button>See-more</button></a>
+        </div> -->
+        
+        
+    </main>
+    <main class="row">
+     <div  class="col-xxl-3 col-xl-3 col-lg-3 col-md-6 col-sm-12">
+                    <h2>Css</h2>
+            <h6>Project 13</h6>
+            <p>FaceBook</p>
+            <a href="https://fasih-nasirproject13.netlify.app/" target="_blank"><button>See-more</button></a>
+        </div> 
+         <div  class="col-xxl-3 col-xl-3 col-lg-3 col-md-6 col-sm-12">
+                        <h2>Css</h2>
+            <h6>Project 14</h6>
+            <p>SpotFinder</p>
+            <a href="https://fasih-nasirproject14.netlify.app/" target="_blank"><button>See-more</button></a>
+        </div> 
+         <div  class="col-xxl-3 col-xl-3 col-lg-3 col-md-6 col-sm-12">
+                        <h2>Css</h2>
+            <h6>Project 15</h6>
+            <p>KamKaj</p>
+            <a href="https://fasih-nasirproject15.netlify.app/" target="_blank"><button>See-more</button></a>
+        </div> 
+    </main>
+        <main class="row" id="up">
     
-    
-</main>
-<!--  -->
-<main class="main">
-    <div>  <h6>Project 04</h6>
-        <p>Nested Table</p>
-        <a href="https://fasih-nasirproject4.netlify.app/" target="_blank"><button>See-more</button></a>
+         <div  class="col-xxl-3 col-xl-3 col-lg-3 col-md-6 col-sm-12">
+                        <h2>Css</h2>
+            <h6>Project 16</h6>
+            <p>Scolitar</p>
+            <a href="https://fasih-nasirproject17.netlify.app/" target="_blank"><button>See-more</button></a>
+        </div> 
+        <div  class="col-xxl-3 col-xl-3 col-lg-3 col-md-6 col-sm-12">
+                        <h2>Css</h2>
+            <h6>hackathon</h6>
+            <p>Salt Pepper</p>
+            <a href="https://fasihnasir-saltpape.netlify.app/" target="_blank"><button>See-more</button></a>
+        </div> 
+    </main>
+
+  
+</div>
     </div>
-    <div>  <h6>Project 05</h6>
-        <p>Table Form</p>
-        <a href="https://fasih-nasirproject5.netlify.app/" target="_blank"><button>See-more</button></a>
-    </div>
-    <div>
-      <h6>Project 06</h6>
-        <p>Peroditic Table</p>
-        <a href="https://fasih-nasirproject6.netlify.app/" target="_blank"><button>See-more</button></a>
-    </div>
-    
-    
-</main>
-<!--  -->
-<main class="main">
-    <div>
-        <h6>Project 07</h6>
-        <p>Food Website</p>
-        <a href="https://fasih-nasirproject7.netlify.app/" target="_blank"><button>See-more</button></a>
-    </div>
-    <div>
-        <h6>Project 08</h6>
-        <p>W3 School </p>
-        <a href="https://fasih-nasirproject8.netlify.app/" target="_blank"><button>See-more</button></a>
-    </div>
-    <div>
-          <h6>Project 09</h6>
-        <p>Form</p>
-        <a href="https://fasih-nasirproject9.netlify.app/" target="_blank"><button>See-more</button></a>
-    </div>
-    
-    
-</main>
-<main class="main">
-    
-    <!-- <div>
-        <h6>Project 08</h6>
-        <p>W3 School </p>
-        <a href="https://fasih-nasir.github.io/project8/" target="_blank"><button>See-more</button></a>
-    </div> -->
-    <div>
-          <h6>Project 10</h6>
-        <p>Flims Table</p>
-        <a href="https://fasih-nasirproject10.netlify.app/" target="_blank"><button>See-more</button></a>
-    </div>
-    <div>
-        <h6>Project 11</h6>
-        <p>Figma Wesbite</p>
-        <a href="https://fasih-nasirproject11.netlify.app/" target="_blank"><button>See-more</button></a>
-    </div>
-        <div>
-        <h6>Project 12</h6>
-        <p>Whatsapp</p>
-        <a href="https://fasih-nasirproject12.netlify.app/" target="_blank"><button>See-more</button></a>
-    </div>
-        <!-- <div>
-        <h6>Project 13</h6>
-        <p>FaceBook</p>
-        <a href="https://fasih-nasir.github.io/project13/" target="_blank"><button>See-more</button></a>
-    </div> -->
-    
-    
-</main>
-<main class="main">
- <div>
-        <h6>Project 13</h6>
-        <p>FaceBook</p>
-        <a href="https://fasih-nasirproject13.netlify.app/" target="_blank"><button>See-more</button></a>
-    </div> 
-     <div>
-        <h6>Project 14</h6>
-        <p>SpotFinder</p>
-        <a href="https://fasih-nasirproject14.netlify.app/" target="_blank"><button>See-more</button></a>
-    </div> 
-     <div>
-        <h6>Project 15</h6>
-        <p>KamKaj</p>
-        <a href="https://fasih-nasirproject15.netlify.app/" target="_blank"><button>See-more</button></a>
-    </div> 
-</main>
-    <main class="main">
- <div>
-        <h6>Practice</h6>
-        <p>Toble</p>
-        <a href="https://fasihnasir-toble.netlify.app/" target="_blank"><button>See-more</button></a>
-    </div> 
-     <div>
-        <h6>Practice</h6>
-        <p>Runway</p>
-        <a href="https://fasihnasir-runway.netlify.app/" target="_blank"><button>See-more</button></a>
-    </div> 
-     <div>
-        <h6>Project 16</h6>
-        <p>Scolitar</p>
-        <a href="https://fasih-nasirproject17.netlify.app/" target="_blank"><button>See-more</button></a>
-    </div> 
-</main>
-       <main class="main">
- <div>
-        <h6>Practice</h6>
-        <p>Justice</p>
-        <a href="https://fasihnasir-justice.netlify.app/" target="_blank"><button>See-more</button></a>
-    </div> 
-     <div>
-        <h6>hackathon</h6>
-        <p>Salt Pepper</p>
-        <a href="https://fasihnasir-saltpape.netlify.app/" target="_blank"><button>See-more</button></a>
-    </div> 
-<!--      <div>
-        <h6>Project 15</h6>
-        <p>Scolitar</p>
-        <a href="https://fasih-nasirproject17.netlify.app/" target="_blank"><button>See-more</button></a>
-    </div>  -->
-</main>
-</body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+  </body>
 </html>
