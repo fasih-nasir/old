@@ -10,35 +10,48 @@
     <link href="https://fonts.googleapis.com/css2?family=Mooli&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 <style>
+    body,*{
+        background-color:rgba(176, 174, 174, 0.348);
+
+    }
     #home{
-        display: flex;
+        display: flex;  background-color:rgba(176, 174, 174, 0.348);
         align-items: center;
         flex-direction: row;
-background-image: url(home.png);
-height: 100vh;
-background-size: cover;
-object-fit: cover;
-background-position: center;
-}
-.container{
+        /* border: 2px solid red; */
+        /* background: linear-gradient(90deg, rgba(91,121,242,1) 0%, rgba(132,206,210,1) 97%); */
+        /* background-image: url(home.png); */
+        /* height: 100vh; */
+        background-size: cover;
+        object-fit: cover;
+        background-position: center;
+        /* margin-top: 140px; */
+    }
+    #container-fluid{
+        /* margin-top: 140px; */
+    padding: 20px 0px;
+    /* margin: 250px 0px; */  background-color:rgba(176, 174, 174, 0.348);
     /* background-color: rgba(211, 211, 211, 0.106); */
-    padding: 50px 60px;
-    color: white;
-    overflow-Y: scroll;
-    height: 90vh;
+    /* padding: 50px 60px; */
+    color: black;
+    /* border: 2px solid green; */
+    /* overflow-Y: scroll; */
+    /* height: 90vh; */
     /* border: 2px solid #121427; */
     font-family: "Nunito", sans-serif;
-    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+    /* box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px; */
 }
 .container::-webkit-scrollbar{
     display: none;
 }
 .row{
+    background-color:rgba(176, 174, 174, 0.348);
     display: flex;
     flex-direction: row;
     justify-content: center;
     font-family: "Nunito", sans-serif;
     transition: 0.9s ease;
+    /* border: 2px solid green; */
 }
 .row>div:hover{
     border: 1px solid rgba(211, 211, 211, 0.3);
@@ -48,34 +61,24 @@ background-position: center;
     background-color: rgba(211, 211, 211, 0.383) ;
 }
 .row>div{
-    padding: 30px 0px;
-    background-color: rgba(211, 211, 211, 0.3);
-    height: 200px;
-    /* width: 200px; */
-    margin: 5px;
+    /* padding: 10px; */
+    background-color:rgba(252, 242, 242, 0.496);
+    /* background: linear-gradient(90deg, rgba(237,128,109,1) 9%, rgba(255,166,94,1) 100%); */
+    /* height: 200px; */
+    /* width: 200px; */box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+    margin:20px 5px;
+    padding: 20px;
+border-radius: 10px;
     text-align: center;
     display: flex;
+    border: none;
     flex-direction:column;
     align-items: center;
     font-family: "Nunito", sans-serif;
     justify-content: center;
 }
 
-.row>div>a>button{
-    color: white;
-    background-color: #1214277a;
-    padding: 5px 40px;
-    font-family: "Nunito", sans-serif;
-    border: none;
-    transition: 0.5s ease;
-}
-.row>div>a>button:hover{
-    background-color: rgba(211, 211, 211, 0.515) ;
-    transform: scale(1.1);
-    background-color: transparent;
-    color: rgba(211, 211, 211, 0.3);
-    border: 1px solid rgba(211, 211, 211, 0.3);;;;
-}
+
 .top{
     background-color:  rgba(211, 211, 211, 0.515) ;
     position: fixed;
@@ -98,308 +101,337 @@ background-position: center;
     color:white;
     border: 1px solid white;
 }
+.d0{
+    background-color: transparent;
+    transition: 0.6s ease;
+}
+.d1{
+    transition: 0.6s ease;
+    display: none;
+}
+.col-xxl-2:hover .d1{  transition: 0.6s ease;
+    display: block;
+    position: absolute;
+    /* background-color: black; */
+}
+.col-xxl-2:hover .d0 {  transition: 0.6s ease;
+    opacity: 0;
+}
+.col-xxl-2{
+    padding: 20px 10px !important;
+}
+.d0>img{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius:5px ;
+    background-size: cover !important;
+    object-fit: cover !important;
+    /* height: 150px !important; */
+    /* width: 200px !important; */
+    /* background-position: right !important; */
+    /* height: 100% !important; */
+    /* transform: scale(1.1); */
+    /* height: 100px; */
+    /* width: 170px; */
+    /* height: 100%; */
+    /* width: 100%; */
+}
+.name{
+    color: #0e101e82;
+    /* background-color: #1214272a */
+    ;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    font-weight: 800;
+/* margin: 5px 0px !important; */
+    padding:6px 15px;
+    border-radius: 20px;
+    /* margin: 10px; */
+    /* position: absolute; */
+    /* bottom: 0px; */
+}
+.d1>a>i{
+    background-color: rgba(73, 73, 73, 0.515) ;
+    color: white;
+    padding: 10px;
+border-radius: 20px;
+    /* margin: 3px; */
+    
+    border: 1px solid rgba(121, 121, 121, 0.515) ;;
+}
+.d1>a>i:hover{
+    /* color: white; */
+    background-color: white;
+    border: 1px solid rgba(73, 73, 73, 0.515) ;;
+    color: rgba(73, 73, 73, 0.515) ;;
+}
+.d1>a{
+    border: none !important;
+    color: #292e5d00 !important;
+    border: none;
+    padding: 5px;
+    margin: 3px;
+    /* background-color: #9d9d9d !important; */
+    /* background-color: white !important; */
+    /* color: #1214272a !important; */
+}
 </style> 
 </head>
   <body>
     <div class="container-fluid" id="home">
-<div class="container">
-    <a href="#top">
-    <button class="btn top" ><i class="fa-solid fa-caret-up"></i></button>
-</a>
-<a href="#up">
-    <button class="btn up"><i class="fa-solid fa-caret-down"></i></button>
-</a>
+<div class="container-fluid" id="container-fluid">
+
     <main class="row" id="top">
-        <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-6 col-sm-12" >
-   
-                     <h1>html</h1>
-            <h6>Project 01</h6>
-            <p>Basic Stucture</p>
-            <a href="https://fasih-nasirproject1.netlify.app/" target="_blank"><button>See-more</button></a>
+        <div class="col-xxl-2 col-xl-2 col-lg-2 col-md-6 col-sm-12" >
+            <div class="d0">
+<img src="img/12.jpg" class="img-fluid" alt="" srcset="">
+<p></p>
+ <span class="name"> WhatsApp</span>
+            </div>
+            <div class="d1">
+
+
+            <a href="https://fasih-nasirproject12.netlify.app/" target="_blank">
+            <i class="fa fa-eye"></i></a>
+            <a href="https://github.com/Fasih-Nasir/project12" target="_blank"><i class="fa-solid fa-code"></i></a>
+ 
+    </div>
         </div>
-        <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-6 col-sm-12"> 
-                     <h1>html</h1> <h6>Project 02</h6>
-            <p>List</p>
-            <a href="https://fasih-nasirproject2.netlify.app/" target="_blank"><button>See-more</button></a>
+        <div class="col-xxl-2 col-xl-2 col-lg-2 col-md-6 col-sm-12" >
+            <div class="d0">
+<img src="img/13.jpg" class="img-fluid" alt="" srcset="">
+<p></p>
+ <span class="name">FaceBook</span>
+            </div>
+            <div class="d1">
+
+
+            <a href="https://fasih-nasirproject13.netlify.app/" target="_blank">
+            <i class="fa fa-eye"></i></a>
+            <a href="https://github.com/Fasih-Nasir/project13" target="_blank"><i class="fa-solid fa-code"></i></a>
+ 
+    </div>
         </div>
-        <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-6 col-sm-12">
-                     <h1>html</h1>  
-            <h6>Project 03</h6>
-            <p>Menu</p>
-            <a href="https://fasih-nasirproject3.netlify.app/" target="_blank"><button>See-more</button></a>
+        <div class="col-xxl-2 col-xl-2 col-lg-2 col-md-6 col-sm-12" >
+            <div class="d0">
+<img src="img/14.jpg" class="img-fluid" alt="" srcset="">
+<p></p>
+ <span class="name">SpotFinder</span>
+            </div>
+            <div class="d1">
+
+
+            <a href="https://fasih-nasirproject14.netlify.app/" target="_blank">
+            <i class="fa fa-eye"></i></a>
+            <a href="https://github.com/Fasih-Nasir/project14" target="_blank"><i class="fa-solid fa-code"></i></a>
+ 
+    </div>
         </div>
-        
-        
+        <div class="col-xxl-2 col-xl-2 col-lg-2 col-md-6 col-sm-12" >
+            <div class="d0">
+<img src="img/15.jpg" class="img-fluid" alt="" srcset="">
+<p></p>
+ <span class="name">KamKaj</span>
+            </div>
+            <div class="d1">
+
+
+            <a href="https://fasih-nasirproject15.netlify.app/" target="_blank">
+            <i class="fa fa-eye"></i></a>
+            <a href="https://github.com/Fasih-Nasir/project15" target="_blank"><i class="fa-solid fa-code"></i></a>
+ 
+    </div>
+        </div>
     </main>
     <!--  -->
     <main class="row">
-        <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-6 col-sm-12"> 
-                     <h1>html</h1> <h6>Project 04</h6>
-            <p>Nested Table</p>
-            <a href="https://fasih-nasirproject4.netlify.app/" target="_blank"><button>See-more</button></a>
+        <div class="col-xxl-2 col-xl-2 col-lg-2 col-md-6 col-sm-12" >
+            <div class="d0">
+<img src="img/16.jpg" class="img-fluid" alt="" srcset="">
+<p></p>
+ <span class="name">Calculator</span>
+            </div>
+            <div class="d1">
+
+
+            <a href="https://fasih-nasirjsproject17.netlify.app/cal.html" target="_blank">
+            <i class="fa fa-eye"></i></a>
+            <a href="https://github.com/Fasih-Nasir/jsproject17" target="_blank"><i class="fa-solid fa-code"></i></a>
+ 
+    </div>
         </div>
-        <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-6 col-sm-12">
-                     <h1>html</h1>  <h6>Project 05</h6>
-            <p>Table Form</p>
-            <a href="https://fasih-nasirproject5.netlify.app/" target="_blank"><button>See-more</button></a>
+        <div class="col-xxl-2 col-xl-2 col-lg-2 col-md-6 col-sm-12" >
+            <div class="d0">
+<img src="img/17.jpg" class="img-fluid" alt="" srcset="">
+<p></p>
+ <span class="name">Age Calculator</span>
+            </div>
+            <div class="d1">
+
+
+            <a href="https://fasih-nasirjsproject17.netlify.app/age.html" target="_blank">
+            <i class="fa fa-eye"></i></a>
+            <a href="https://github.com/Fasih-Nasir/jsproject17" target="_blank"><i class="fa-solid fa-code"></i></a>
+ 
+    </div>
         </div>
-        <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-6 col-sm-12">
-                     <h1>html</h1>
-          <h6>Project 06</h6>
-            <p>Peroditic Table</p>
-            <a href="https://fasih-nasirproject6.netlify.app/" target="_blank"><button>See-more</button></a>
+        <div class="col-xxl-2 col-xl-2 col-lg-2 col-md-6 col-sm-12" >
+            <div class="d0">
+<img src="img/18.jpg" class="img-fluid" alt="" srcset="">
+<p></p>
+ <span class="name">Alphbet Generator</span>
+            </div>
+            <div class="d1">
+
+
+            <a href="https://fasih-nasirjsproject17.netlify.app/findalpha.html" target="_blank">
+            <i class="fa fa-eye"></i></a>
+            <a href="https://github.com/Fasih-Nasir/jsproject17" target="_blank"><i class="fa-solid fa-code"></i></a>
+ 
+    </div>
         </div>
-        
-        
+        <div class="col-xxl-2 col-xl-2 col-lg-2 col-md-6 col-sm-12" >
+            <div class="d0">
+<img src="img/19.jpg" class="img-fluid" alt="" srcset="">
+<p></p>
+ <span class="name">Text Editor</span>
+            </div>
+            <div class="d1">
+
+
+            <a href="https://fasih-nasirjsproject20.netlify.app/" target="_blank">
+            <i class="fa fa-eye"></i></a>
+            <a href="https://github.com/Fasih-Nasir/jsproject20" target="_blank"><i class="fa-solid fa-code"></i></a>
+ 
+    </div>
+        </div>
     </main>
     <!--  -->
     <main class="row">
-        <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-6 col-sm-12">
-            <h2>Css</h2>
-            <h6>Project 07</h6>
-            <p>Food Website</p>
-            <a href="https://fasih-nasirproject7.netlify.app/" target="_blank"><button>See-more</button></a>
+        <div class="col-xxl-2 col-xl-2 col-lg-2 col-md-6 col-sm-12" >
+            <div class="d0">
+<img src="img/20.jpg" class="img-fluid" alt="" srcset="">
+<p></p>
+ <span class="name">Single Slider</span>
+            </div>
+            <div class="d1">
+
+
+            <a href="https://fasih-nasirjsproject21.netlify.app/" target="_blank">
+            <i class="fa fa-eye"></i></a>
+            <a href="https://github.com/Fasih-Nasir/project21" target="_blank"><i class="fa-solid fa-code"></i></a>
+ 
+    </div>
         </div>
-        <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-6 col-sm-12">
-                  <h2>Css</h2>
-            <h6>Project 08</h6>
-            <p>W3 School </p>
-            <a href="https://fasih-nasirproject8.netlify.app/" target="_blank"><button>See-more</button></a>
+        <div class="col-xxl-2 col-xl-2 col-lg-2 col-md-6 col-sm-12" >
+            <div class="d0">
+<img src="img/21.jpg" class="img-fluid" alt="" srcset="">
+<p></p>
+ <span class="name">TODO List</span>
+            </div>
+            <div class="d1">
+
+
+            <a href="https://fasih-nasirjsproject22.netlify.app/" target="_blank">
+            <i class="fa fa-eye"></i></a>
+            <a href="https://github.com/Fasih-Nasir/jsproject22" target="_blank"><i class="fa-solid fa-code"></i></a>
+ 
+    </div>
         </div>
-        <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-6 col-sm-12">
-                  <h2>Css</h2>
-              <h6>Project 09</h6>
-            <p>Form</p>
-            <a href="https://fasih-nasirproject9.netlify.app/" target="_blank"><button>See-more</button></a>
+        <div class="col-xxl-2 col-xl-2 col-lg-2 col-md-6 col-sm-12" >
+            <div class="d0">
+<img src="img/22.jpg" class="img-fluid" alt="" srcset="">
+<p></p>
+ <span class="name">Login/LogOut</span>
+            </div>
+            <div class="d1">
+
+
+            <a href="https://fasih-nasirjsproject23.netlify.app/" target="_blank">
+            <i class="fa fa-eye"></i></a>
+            <a href="https://github.com/Fasih-Nasir/jsproject23" target="_blank"><i class="fa-solid fa-code"></i></a>
+ 
+    </div>
         </div>
-        
-        
+        <div class="col-xxl-2 col-xl-2 col-lg-2 col-md-6 col-sm-12" >
+            <div class="d0">
+<img src="img/23.jpg" class="img-fluid" alt="" srcset="">
+<p></p>
+ <span class="name">Ecommerce Website</span>
+            </div>
+            <div class="d1">
+
+
+            <a href="https://fasih-nasirjsproject20.netlify.app/" target="_blank">
+            <i class="fa fa-eye"></i></a>
+            <a href="https://github.com/Fasih-Nasir/jsproject20" target="_blank"><i class="fa-solid fa-code"></i></a>
+ 
+    </div>
+        </div>
     </main>
     <main class="row">
-        
-      
-        <div  class="col-xxl-3 col-xl-3 col-lg-3 col-md-6 col-sm-12">
-                  <h2>Css</h2>
-              <h6>Project 10</h6>
-            <p>Flims Table</p>
-            <a href="https://fasih-nasirproject10.netlify.app/" target="_blank"><button>See-more</button></a>
+        <div class="col-xxl-2 col-xl-2 col-lg-2 col-md-6 col-sm-12" >
+            <div class="d0">
+<img src="img/24.jpg" class="img-fluid" alt="" srcset="">
+<p></p>
+ <span class="name">Quiz App</span>
+            </div>
+            <div class="d1">
+
+
+            <a href="https://fasih-nasirjsproject24.netlify.app/" target="_blank">
+            <i class="fa fa-eye"></i></a>
+            <a href="https://github.com/Fasih-Nasir/jsproject24" target="_blank"><i class="fa-solid fa-code"></i></a>
+ 
+    </div>
         </div>
-        <div  class="col-xxl-3 col-xl-3 col-lg-3 col-md-6 col-sm-12">
-                  <h2>Css</h2>
-            <h6>Project 11</h6>
-            <p>Figma Wesbite</p>
-            <a href="https://fasih-nasirproject11.netlify.app/" target="_blank"><button>See-more</button></a>
-        </div>
-            <div  class="col-xxl-3 col-xl-3 col-lg-3 col-md-6 col-sm-12">
-                      <h2>Css</h2>
-            <h6>Project 12</h6>
-            <p>Whatsapp</p>
-            <a href="https://fasih-nasirproject12.netlify.app/" target="_blank"><button>See-more</button></a>
-        </div>
-            <!-- <div>
-            <h6>Project 13</h6>
-            <p>FaceBook</p>
-            <a href="https://fasih-nasir.github.io/project13/" target="_blank"><button>See-more</button></a>
+        <!-- <div class="col-xxl-2 col-xl-2 col-lg-2 col-md-6 col-sm-12" >
+            <div class="d0">
+<img src="img/21.jpg" class="img-fluid" alt="" srcset="">
+<p></p>
+ <span class="name">TODO List</span>
+            </div>
+            <div class="d1">
+
+
+            <a href="https://fasih-nasirjsproject22.netlify.app/" target="_blank">
+            <i class="fa fa-eye"></i></a>
+            <a href="https://github.com/Fasih-Nasir/jsproject22" target="_blank"><i class="fa-solid fa-code"></i></a>
+ 
+    </div>
         </div> -->
-        
-        
+        <!-- <div class="col-xxl-2 col-xl-2 col-lg-2 col-md-6 col-sm-12" >
+            <div class="d0">
+<img src="img/22.jpg" class="img-fluid" alt="" srcset="">
+<p></p>
+ <span class="name">Login/LogOut</span>
+            </div>
+            <div class="d1">
+
+
+            <a href="https://fasih-nasirjsproject23.netlify.app/" target="_blank">
+            <i class="fa fa-eye"></i></a>
+            <a href="https://github.com/Fasih-Nasir/jsproject23" target="_blank"><i class="fa-solid fa-code"></i></a>
+ 
+    </div>
+        </div> -->
+        <!-- <div class="col-xxl-2 col-xl-2 col-lg-2 col-md-6 col-sm-12" >
+            <div class="d0">
+<img src="img/23.jpg" class="img-fluid" alt="" srcset="">
+<p></p>
+ <span class="name">Ecommerce Website</span>
+            </div>
+            <div class="d1">
+
+
+            <a href="https://fasih-nasirjsproject20.netlify.app/" target="_blank">
+            <i class="fa fa-eye"></i></a>
+            <a href="https://github.com/Fasih-Nasir/jsproject20" target="_blank"><i class="fa-solid fa-code"></i></a>
+ 
+    </div>
+        </div> -->
     </main>
-    <main class="row">
-     <div  class="col-xxl-3 col-xl-3 col-lg-3 col-md-6 col-sm-12">
-                    <h2>Css</h2>
-            <h6>Project 13</h6>
-            <p>FaceBook</p>
-            <a href="https://fasih-nasirproject13.netlify.app/" target="_blank"><button>See-more</button></a>
-        </div> 
-         <div  class="col-xxl-3 col-xl-3 col-lg-3 col-md-6 col-sm-12">
-                        <h2>Css</h2>
-            <h6>Project 14</h6>
-            <p>SpotFinder</p>
-            <a href="https://fasih-nasirproject14.netlify.app/" target="_blank"><button>See-more</button></a>
-        </div> 
-         <div  class="col-xxl-3 col-xl-3 col-lg-3 col-md-6 col-sm-12">
-                        <h2>Css</h2>
-            <h6>Project 15</h6>
-            <p>KamKaj</p>
-            <a href="https://fasih-nasirproject15.netlify.app/" target="_blank"><button>See-more</button></a>
-        </div> 
-    </main>
-        <main class="row">
-    
-         <div  class="col-xxl-3 col-xl-3 col-lg-3 col-md-6 col-sm-12">
-                        <h2>Css</h2>
-            <h6>Project 16</h6>
-            <p>Scolitar</p>
-            <a href="https://fasih-nasirproject17.netlify.app/" target="_blank"><button>See-more</button></a>
-        </div> 
-        <div  class="col-xxl-3 col-xl-3 col-lg-3 col-md-6 col-sm-12">
-                        <h2>Css</h2>
-            <h6>hackathon</h6>
-            <p>Salt Pepper</p>
-            <a href="https://fasihnasir-saltpape.netlify.app/" target="_blank"><button>See-more</button></a>
-        </div> 
-        <div  class="col-xxl-3 col-xl-3 col-lg-3 col-md-6 col-sm-12">
-            <h2>JS</h2>
-<h6>Projec1</h6>
-<p>ALERTS</p>
-<a href="https://fasih-nasirjsproject1.netlify.app/" target="_blank"><button>See-more</button></a>
-</div> 
-    </main>
-    <main class="row">
-    
-        <div  class="col-xxl-3 col-xl-3 col-lg-3 col-md-6 col-sm-12">
-            <h2>JS</h2>
-<h6>Projec2</h6>
-<p>VARIABLE FOR STRING</p>
-<a href="https://fasih-nasirjsproject2.netlify.app/" target="_blank"><button>See-more</button></a>
-</div> 
-<div  class="col-xxl-3 col-xl-3 col-lg-3 col-md-6 col-sm-12">
-    <h2>JS</h2>
-<h6>Projec3</h6>
-<p>Variavle for String</p>
-<a href="https://fasih-nasirjsproject3.netlify.app/" target="_blank"><button>See-more</button></a>
-</div> 
-<div  class="col-xxl-3 col-xl-3 col-lg-3 col-md-6 col-sm-12">
-    <h2>JS</h2>
-<h6>Projec4</h6>
-<p>Legal And Illegal Variable</p>
-<a href="https://fasih-nasirjsproject4.netlify.app/" target="_blank"><button>See-more</button></a>
-</div> 
-   </main>
-   <main class="row">
-    
-    <div  class="col-xxl-3 col-xl-3 col-lg-3 col-md-6 col-sm-12">
-        <h2>JS</h2>
-<h6>Projec5</h6>
-<p>Math Expression</p>
-<a href="https://fasih-nasirjsproject5.netlify.app/" target="_blank"><button>See-more</button></a>
-</div> 
-<div  class="col-xxl-3 col-xl-3 col-lg-3 col-md-6 col-sm-12">
-<h2>JS</h2>
-<h6>Projec6</h6>
-<p>Math Expression</p>
-<a href="https://fasih-nasirjsproject6.netlify.app/" target="_blank"><button>See-more</button></a>
-</div> 
-<div  class="col-xxl-3 col-xl-3 col-lg-3 col-md-6 col-sm-12">
-<h2>JS</h2>
-<h6>Projec7</h6>
-<p>User Input</p>
-<a href="https://fasih-nasirjsproject7.netlify.app/" target="_blank"><button>See-more</button></a>
-</div> 
-</main>
-    <main class="row">
-    
-    <div  class="col-xxl-3 col-xl-3 col-lg-3 col-md-6 col-sm-12">
-        <h2>JS</h2>
-<h6>Projec8</h6>
-<p>If Esle Condition</p>
-<a href="https://fasih-nasirjsproject8.netlify.app/" target="_blank"><button>See-more</button></a>
-</div> 
-<div  class="col-xxl-3 col-xl-3 col-lg-3 col-md-6 col-sm-12">
-<h2>JS</h2>
-<h6>Projec9</h6>
-<p>Arrays</p>
-<a href="https://fasih-nasirjsproject9.netlify.app/" target="_blank"><button>See-more</button></a>
-</div> 
-<div  class="col-xxl-3 col-xl-3 col-lg-3 col-md-6 col-sm-12">
-<h2>Arrays</h2>
-<h6>Projec 10</h6>
-<p>User Input</p>
-<a href="https://fasih-nasirjsproject10.netlify.app/" target="_blank"><button>See-more</button></a>
-</div> 
-</main>
-      <main class="row">
-    
-    <div  class="col-xxl-3 col-xl-3 col-lg-3 col-md-6 col-sm-12">
-        <h2>JS</h2>
-<h6>Project 11</h6>
-<p>Extra Array</p>
-<a href="https://fasih-nasirjsproject11.netlify.app/" target="_blank"><button>See-more</button></a>
-</div> 
-<div  class="col-xxl-3 col-xl-3 col-lg-3 col-md-6 col-sm-12">
-<h2>JS</h2>
-<h6>Projec12</h6>
-<p>Assigment</p>
-<a href="https://fasih-nasirjsproject12.netlify.app/" target="_blank"><button>See-more</button></a>
-</div>  
-<div  class="col-xxl-3 col-xl-3 col-lg-3 col-md-6 col-sm-12">
-<h2>Arrays</h2>
-<h6>Projec 13</h6>
-<p>Assigment</p>
-<a href="https://fasih-nasirjsproject13.netlify.app/" target="_blank"><button>See-more</button></a>
-</div> 
-</main>
-      <main class="row">
-    
-    <div  class="col-xxl-3 col-xl-3 col-lg-3 col-md-6 col-sm-12">
-        <h2>JS</h2>
-<h6>Project 14</h6>
-<p>Nothing</p>
-<a href="https://fasih-nasirjsproject14.netlify.app/" target="_blank"><button>See-more</button></a>
-</div> 
-<div  class="col-xxl-3 col-xl-3 col-lg-3 col-md-6 col-sm-12">
-<h2>JS</h2>
-<h6>Projec15</h6>
-<p>Nothing</p>
-<a href="https://fasih-nasirjsproject15.netlify.app/" target="_blank"><button>See-more</button></a>
-</div>  
-<div  class="col-xxl-3 col-xl-3 col-lg-3 col-md-6 col-sm-12">
-<h2>Arrays</h2>
-<h6>Projec 16</h6>
-<p>Nothing</p>
-<a href="https://fasih-nasirjsproject16.netlify.app/" target="_blank"><button>See-more</button></a>
-</div> 
-</main>
-   <main class="row">
-    
-    <div  class="col-xxl-3 col-xl-3 col-lg-3 col-md-6 col-sm-12">
-        <h2>JS</h2>
-<h6>Project 17</h6>
-<p>Calculators</p>
-<a href="https://fasih-nasirjsproject17.netlify.app/" target="_blank"><button>See-more</button></a>
-</div> 
-<div  class="col-xxl-3 col-xl-3 col-lg-3 col-md-6 col-sm-12">
-<h2>JS</h2>
-<h6>Projec18</h6>
-<p>Date</p>
-<a href="https://fasih-nasirjsproject18.netlify.app/" target="_blank"><button>See-more</button></a>
-</div>   
-<div  class="col-xxl-3 col-xl-3 col-lg-3 col-md-6 col-sm-12">
-<h2>Js</h2>
-<h6>Projec 19</h6>
-<p>None</p>
-<a href="https://fasih-nasirjsproject19.netlify.app/" target="_blank"><button>See-more</button></a>
-</div>  
-</main>
+   
+<!--  -->
 
-
-
- <main class="row">
-    
-    <div  class="col-xxl-3 col-xl-3 col-lg-3 col-md-6 col-sm-12">
-        <h2>JS</h2>
-<h6>None</h6>
-<p>Case Converter</p>
-<a href="https://fasih-nasirtable.netlify.app/" target="_blank"><button>See-more</button></a>
-</div> 
-<div  class="col-xxl-3 col-xl-3 col-lg-3 col-md-6 col-sm-12">
-<h2>JS</h2>
-<h6>Projec20</h6>
-<p>Date</p>
-<a href="https://fasih-nasirjsproject20.netlify.app/" target="_blank"><button>See-more</button></a>
-</div>   
-<!-- <div  class="col-xxl-3 col-xl-3 col-lg-3 col-md-6 col-sm-12">
-<h2>Function</h2>
-<h6>Projec 19</h6>
-<p>Nothing</p>
-<a href="https://fasih-nasirjsproject19.netlify.app/" target="_blank"><button>See-more</button></a>
-</div>   -->
-</main>
-  
-<!-- 
-  <div id="up">
-
-  </div>
 </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
